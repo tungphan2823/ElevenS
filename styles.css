@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +30,7 @@ body{
     transition: 0.06s;
     padding-bottom: 0.25rem;
     position: fixed;
+    z-index: 2;
 }
 
 .nar li a::before{
@@ -55,10 +56,11 @@ body{
     position: absolute;
     top: 12%;
     left: 16%;
-    font-size: 300px;
+    font-size: 250px;
     color: aliceblue;
     font-family: 'Playfair Display', serif;
     letter-spacing: 10px;
+    z-index: 1;
 }
 .secondtext{
     position: absolute;
@@ -108,7 +110,6 @@ body{
     padding-top: 5%;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
-    position: relative;
 }
 .img2{
     width: 100%;
@@ -132,14 +133,13 @@ body{
     height: 40%;
     width: 100%;
     object-fit: cover;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 .blackscreen2text{
     color: aliceblue;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
+    padding-top: 8%;
+    padding-left: 35%;
 }
 .img3{
     width: 100%;
@@ -188,7 +188,7 @@ body{
 .img421 p {
     color: white;
     position: absolute;
-    font-size: 500%;
+    font-size: 150px;
     font-family: 'Roboto Slab', serif;
 }
 .img422 img{
@@ -208,7 +208,7 @@ body{
     padding-top: 2%;
     width: 50%;
     height: 55%;
-    background-color:rgba(114, 132, 71, 0.1)    ;
+    background-color:rgba(0, 0, 0, 0.1);
     background-position: cover;
 
 
@@ -216,6 +216,4 @@ body{
 .img422:hover .hover{
     opacity: 1;
     transition: 0.2s ease-in;
-    
-    
 }

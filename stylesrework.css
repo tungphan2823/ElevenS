@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: black;
+}
+.nar{
+    display: flex;
+    justify-content: space-around;
+    width: 23%;
+    margin: auto;
+}
+.nar li a{
+    color:aliceblue;
+    font-size: 20px; 
+    position:absolute;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.06s;
+    padding-bottom: 0.25rem;
+    position: fixed;
+    z-index: 2;
+}
+
+.nar li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: 0.4s ease-in;
+}
+.nar li a:hover::before{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-text{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    font-size: 250px;
+    letter-spacing: 20px;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+}
+.banner-smalltext{
+    position: absolute;
+    color: aliceblue;
+    font-size: 25px;
+    bottom: 4%;
+    left: 42%;
+    font-family: 'Roboto', sans-serif;
+}
+.blackbanner img{
+    width: 100%;
+    height: 100%;
+}
+.blackbanner-text{
+    color: aliceblue;
+    position: absolute;
+    font-size: 80px;
+    padding: 5%;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+.blackbanner a{
+    font-size: 30px;
+    color: aliceblue;
+    padding-top: 20%;
+    left: 8%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color:aliceblue;
+    font-size: 20px; 
+    position:absolute;
+    margin-top: 25px;
+    text-transform: uppercase;
+    transition: 0.06s;
+    padding-bottom: 0.25rem;
+    z-index: 2;
+}
+.blackbanner a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: 0.4s ease-in
+}
+.blackbanner a:hover::before{
+    width: 100%;
+}
+.magazine-text{
+    position: absolute;
+    color: aliceblue;
+    font-size: 20px;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+.magazine{
+    display: flex;
+    width: 100%;
+    height: 120%;
+}
+.man,.zara{
+    width: 100%;
+    height: 100%;
+}
+.man img,.zara img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.magazine-hover{
+    position:absolute;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.1);
+    background-position: cover;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 50%;
+    height: 120%;
+}
+.man:hover .magazine-hover,.zara:hover .magazine-hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+.blackbanner2{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    background-image: url(black.png);
+    width: 100%;
+    height: 30%;
+}
+.blackbanner2-text{
+    position: absolute;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.magazine2{
+    display: flex;
+    width: 100%;
+    height: 110%;
+}
+.girl1{
+    width: 100%;
+    height: 100%;
+}
+.girl1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.girlandshoes{
+    width: 100%;
+    height: 100%;
+}
+.girl2 img,.shoes img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.magazine2-text, .magazine3-text{
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.magazine2-hover{
+    position:absolute;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.1);
+    background-position: cover;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 50%;
+    height: 110%;
+}
+.girl1:hover .magazine2-hover,.girl2:hover .magazine3-hover,.shoes:hover .magazine3-hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+.magazine3-hover{
+    position:absolute;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.1);
+    background-position: cover;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 50%;
+    height: 55%;
+}
+.hellojs{
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.hello{
+    color: aliceblue;
+position: absolute;
+font-size: 120px;
+    font-family: 'Roboto Slab', serif;
+}
+.hellojs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
